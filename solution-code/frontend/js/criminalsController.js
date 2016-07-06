@@ -24,7 +24,7 @@ function CriminalsController($http){
     $http
       .post('http://localhost:3000/criminals', self.newCriminal)
       .then(function(response){
-        getCriminals();
+        self.all.push(response.data.criminal)
     });
     self.newCriminal = {};
   }
