@@ -1,6 +1,14 @@
-# Angular $http
+<!--
+Market: SF
+-->
 
-## Introduction
+![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png)
+
+# Angular $http Lab
+
+### Introduction
+
+> ***Note:*** *This can be a pair programming activity or done independently.*
 
 Based on our experience in the last lesson using $http to access APIs in Angular, your task is to build something _just_ like what we built together - but on your own.
 
@@ -11,16 +19,20 @@ Now, the fun part. You'll be working on an interface for our **Infamous Criminal
 
 ## Exercise
 
+#### Requirements
+
 Use $http to:
 
 - access an API resource
 - POST a new instance of a resource
+
+**Bonus:**
 - update an API resource
 - delete an API resource
 
 #### Starter Code
 
-There's an Express-built API ready to run with a simple `npm start`. Don't forget to have Mongo running. There's no seed data - you'll have to save your own criminals.
+There's an Express-built API ready to run with `nodemon`. Don't forget to `npm install` and run `mongod`. There's no seed data - you'll have to save your own criminals.
 
 #### Deliverable
 
