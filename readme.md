@@ -34,6 +34,18 @@ Use $http to:
 
 There's an Express-built API ready to run with `nodemon`. Don't forget to `npm install` and run `mongod`. There's no seed data - you'll have to save your own criminals.
 
+#### Instructions
+
+Preliminary:
+1. Check out the index-has-prompts file. You can use this as a guide to build your index.html file from scratch, or copy and paste it into your own index.html file.
+
+2. You will need to flesh out this file with the proper angular functionality. The prompts file has hints. All of the concepts you need for this have been covered. You might need to do some Googling. Ask for help if you need to so you can get to CRUDding!
+
+3. Create your Angular app in an app.js file and your controller in your criminalsController.js file. Your index-has-prompts.html file already has links to where those files will live.
+
+Main:
+4. Write the code in those files to CRUD criminals!
+
 #### Deliverable
 
 Build an Angular app from scratch to interface with our RESTful CRUD API. Focus on GET/POST first and tackle PUT/PATCH/DELETE if you have time.
