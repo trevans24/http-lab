@@ -17,13 +17,13 @@ router.route('/criminals')
 
 router.route('/criminals/:id')
 
-  // GET return specific criminal 
+  // GET return specific candy
   .get(criminalsController.getCriminal)
 
-  // PATCH update existing criminal
+  // PATCH update existing candy
   .patch(criminalsController.updateCriminal)
 
-  // DELETE remove specific criminal from DB
+  // DELETE remove specific candy from DB
   .delete(criminalsController.removeCriminal);
 
 
