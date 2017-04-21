@@ -5,7 +5,7 @@ function getAll(request, response) {
   Criminal.find(function(error, criminals) {
     if(error) response.json({message: 'Could not find any criminal'});
 
-    response.json({criminals: criminals});
+    response.json(criminals);
   }).select('-__v');
 }
 
