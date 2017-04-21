@@ -38,11 +38,13 @@ There's an Express-built API ready to run with `nodemon`. Don't forget to `npm i
 
 Preliminary:
 
-1. Check out the index-has-prompts file. You can use this as a guide to build your index.html file from scratch, or copy and paste it into your own index.html file.
+1. You need to run two servers for this lab.  One for front end and one for back end.  If you haven't yet, run `nodemon` in your `api` folder.  Run `python -m SimpleHTTPServer` in the `frontend` folder, and have a look at the webpage it renders at `localhost:8000`.
 
-2. You will need to flesh out this file with the proper angular functionality. The prompts file has hints. All of the concepts you need for this have been covered. You might need to do some Googling. Ask for help if you need to so you can get to CRUDding!
+1. Check out the `index.html` file. It has prompts that are a useful guide to build out your app.
 
-3. Create your Angular app in an app.js file and your controller in your criminalsController.js file. Your index-has-prompts.html file already has links to where those files will live.
+2. You will need to flesh out this file with the proper angular functionality. All of the concepts you need for this have been covered. You might need to do some Googling. Ask for help if you need to so you can get to CRUDding!
+
+3. Create your Angular app in an `app.js` file and your controller in your `criminalsController.js` file. Your `index.html` file already has links to where those files will live.
 
 Main:
 
