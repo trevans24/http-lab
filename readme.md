@@ -8,7 +8,7 @@ Market: SF
 
 ### Introduction
 
-> ***Note:*** *This can be a pair programming activity or done independently.*
+> ***Note:*** *This will be a pair programming activity, but you will need to submit code separately.  This means that you can work on one developer's repository for the duration of class time today, but you will need to fork that repository to the other developer's GitHub before class ends.*
 
 Based on our experience in the last lesson using $http to access APIs in Angular, your task is to build something _just_ like what we built together - but on your own.
 
