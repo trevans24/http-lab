@@ -32,7 +32,13 @@ Use $http to:
 
 #### Starter Code
 
-There's an Express-built API ready to run with `nodemon`. Don't forget to `npm install` and run `mongod`. There's no seed data - you'll have to save your own criminals.
+##### `api`
+
+There's an Express-built API ready to run with `nodemon`. Don't forget to `npm install` and run `mongod`. To set up your first few criminals run `seed.js` with `node`.
+
+##### `frontend`
+
+There is the beginning of an Angular front end in the `frontend` folder.  Make sure to run `bower install` to install the latest Angular code and verify that it is included propertly in `index.html`.
 
 #### Instructions
 
