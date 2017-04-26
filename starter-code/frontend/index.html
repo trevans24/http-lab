@@ -21,25 +21,25 @@
     <ul id="criminals">
       <li ng-repeat="criminal in criminals.all" data-id="">
         <strong>{{criminal.name}}</strong> <em>{{criminal.location}}</em> <span class='status {{}}'>{{criminal.status}}</span>
-        <button class='delete' ng-click="">X</button>
+        <button class='delete' ng-click="criminals.deleteCriminal(criminal)">X</button>
       </li>
     </ul>
 
 <!-- ADD ng-submit to the form -->
-    <form ng-submit="">
+    <form ng-submit="criminals.addCriminal()">
       <div>
-        <label for="newCriminal-name">Name:</label>
-        <input type="text" id="newCriminal-name" ng-model="criminals.newCriminal.name" placeholder="Prof. Moriarty">
+        <label for="new-criminal-name">Name:</label>
+        <input type="text" id="new-criminal-name" ng-model="criminals.newCriminal.name" placeholder="Prof. Moriarty">
       </div>
       <div>
-        <label for="newCriminal-location">Location:</label>
-        <input type="text" id="newCriminal-location" ng-model="criminals.newCriminal.location" placeholder="Reichenbach Falls, CH">
+        <label for="new-criminal-location">Location:</label>
+        <input type="text" id="new-criminal-location" ng-model="criminals.newCriminal.location" placeholder="Reichenbach Falls, CH">
       </div>
       <div>
-        <label for="newCriminal-status">Status:</label>
+        <label for="new-criminal-status">Status:</label>
 
 <!-- ADD ng-model to the select tag -->
-        <select id="newCriminal-status">
+        <select id="new-criminal-status" ng-model="criminals.newCriminal.status">
           <option value="" disabled>- - Please Select One - -</option>
           <option value="Alive">Alive</option>
           <option value="Dead">Dead</option>

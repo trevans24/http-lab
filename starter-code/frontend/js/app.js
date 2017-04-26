@@ -1,1 +1,1 @@
-angular.module("CriminalApp", []);
+angular.module("CriminalsApp", []);
