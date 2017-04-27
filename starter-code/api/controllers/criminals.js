@@ -62,6 +62,7 @@ function removeCriminal(request, response) {
   }).select('-__v');
 }
 
+
 module.exports = {
   getAll: getAll,
   createCriminal: createCriminal,

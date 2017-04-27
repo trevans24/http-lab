@@ -6,6 +6,7 @@ CriminalsController.$inject = ['$http'];
 function CriminalsController($http){
 	var context = this;
 	this.all = [];
+	context.editForm = false;
 
 	//GET
 	function getCriminals(){
@@ -44,10 +45,10 @@ function CriminalsController($http){
 	// }
 
 	this.deleteCriminal = deleteCriminal;
-	
+
 	// DELETE Route
 	function deleteCriminal(criminal){
-		console.log("Clicked");
+		console.log("Clicked delete");
 		$http.delete("http://localhost:3000/criminals/" + criminal._id)
 		.then((res) => {
 			let index = context.all.indexOf(criminal);
@@ -55,5 +56,36 @@ function CriminalsController($http){
 		});
 	}
 
+	this.editCriminal = editCriminal;
+	// PUT Route
+	function editCriminal(criminal){
+		context.editForm = !context.editForm;
+		// console.log(criminal._id);
+		// console.log('Clicked Edit');
+		let editName = document.querySelector('#edit-criminal-name').value;
+		console.log(editName);
+		// let criminalData = {
+		// 	name: editName,
+  // 			location: 
+		// 	status:
+		// }
+		// $http.PUT("http://localhost:3000/criminals/" + criminal._id)
+		// .then((res) => {
+		// 	let index = context.all.indexOf(criminal);
+		// 	console.log(res);
+		// 	console.log(data);
+		// 	// console.log(criminal._id);
+		// 	// console.log(criminal.name);
+		// 	// console.log(criminal.location);
+		// 	// console.log(criminal.status);
+		// 	// let updateCriminal = new Criminal ({
+		// 	// 	name: name,
+		// 	// 	location: location,
+		// 	// 	status: status
+		// 	// });
+			
+
+		// });
+	}
 
 }

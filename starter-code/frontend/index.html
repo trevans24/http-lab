@@ -22,8 +22,33 @@
       <li ng-repeat="criminal in criminals.all" data-id="">
         <strong>{{criminal.name}}</strong> <em>{{criminal.location}}</em> <span class='status {{}}'>{{criminal.status}}</span>
         <button class='delete' ng-click="criminals.deleteCriminal(criminal)">X</button>
+        <input class='edit' type="checkbox" ng-model="checked" ng-click="criminals.editCriminal(criminal)">Edit</input>
       </li>
     </ul>
+
+    <!-- Edit form -->
+    <form ng-show="criminals.editForm">
+      <h4>Edit Form</h4>
+      <div>
+        <label for="criminal-name">Name:</label>
+        <input type="text" id="edit-criminal-name" ng-model="criminals.name">{{criminal.name}}
+      </div>
+      <div>
+        <label for="criminal-location">Location:</label>
+        <input type="text" id="edit-criminal-location" ng-model="criminals.location">{{criminal.location}}
+      </div>
+      <div>
+        <label for="criminal-status">Status:</label>
+        <select id="edit-criminal-status" ng-model="criminals.editCriminal.status">
+          <option value="" disabled>- - Please Select One - -</option>
+          <option value="Alive">Alive</option>
+          <option value="Dead">Dead</option>
+          <option value="Unknown" selected>Unknown</option>
+        </select>{{criminal.status}}
+      </div>
+      <button class="update" ng-click="criminals.editCriminal(criminal)">Update</button>
+    </form>
+    <br>
 
 <!-- ADD ng-submit to the form -->
     <form ng-submit="criminals.addCriminal()">
